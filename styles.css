@@ -1,0 +1,186 @@
+#main1{
+    margin: 0px;
+    text-align: center;
+    color: yellow;
+    font-size:50px;
+    text-shadow: 2px;
+    background-color: black;
+    padding-bottom: 20px;
+    
+}
+#main2{
+    width:100%;
+    margin: 0px;
+    text-align: center;
+    color: yellow;
+    font-size:30px;
+    text-shadow: 2px;
+    background-color: black;
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+    font-style: italic;
+
+}
+
+p{
+    text-align: center;
+    color:black;
+    font-style: italic;
+    font-size: 40px;
+}
+input{
+    color:black;
+    font-size: 20px;
+    border-width: 4px;
+}
+input:focus{
+  color:red;
+font-style: italic;
+font-weight: bold;
+}
+button:hover{
+  
+  font-style: italic;
+  background-color: green;
+  cursor:pointer;
+  transition :background-color .5s;
+
+}
+button{
+    border-radius: 20px;
+    color:white;
+    background:red;
+    border-style: dotted;
+    border-color:red;
+    text-decoration:solid;
+    font-style: italic;
+    display:block;
+    font-size: 40px;
+    margin: 15px 720px;
+    
+}
+li{
+
+  height: 50px;
+  width: 30px;
+    display: inline-flex;
+
+    border: 4px solid;
+    padding: 30px;
+    text-align: center;
+    font-size: 50px;
+    animation:forwards;
+    animation-duration:2s;  
+    z-index: 1;
+}
+li#F{
+  background-color: yellow;  
+}
+li#L{
+    background-color: red;  
+  }
+  li#A{
+    background-color:pink;  
+  }
+  li#M{
+    background-color:gold;  
+  }
+  li#E{
+    background-color: slategray;  
+  }
+  li#S{
+    background-color:paleturquoise;  
+  }
+  body{
+    margin: 0;
+    background-image: url(love-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode: darken;
+  }
+  
+  @keyframes positionChange{
+  from{
+    transform: translateY(0);
+
+  }
+  to{
+    transform: translateY(-300px);
+  }
+  }
+  
+ 
+  .motion{
+    transition: 3s;
+    position: relative;
+    animation-name: positionChange;
+    animation-duration: 2s;
+  }
+
+@keyframes flows{
+  0%{transform: translateY(0px);}
+  50%{transform: translateY(-300px);visibility: hidden;}
+  100%{visibility: hidden;transition-duration:4s;}
+  
+}
+.flow{
+  
+  transition: 4s;
+  position: relative;
+  animation-name: flows;
+  animation-duration: 4s;
+}
+@keyframes finals{
+ 
+  from{
+    transform:translateY(10px);
+  }
+  to{
+    transform: translateY(-200px);
+  }
+
+  
+}
+.finalnote{
+  
+  transition-delay: 1s;
+  transition: 2s;
+  position: relative;
+  animation-name: finals;
+}
+
+.final{
+  padding: 30px;
+  height:150px;
+  width:700px;
+  opacity: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  background-color:rgb(255, 217, 0);
+  transition: 6s;
+  position: relative;
+  animation-name: positionChange;
+  transition: 4s;
+ margin-left: 400px;
+ border-radius: 30px;
+ border-style:dotted;
+
+  }
+  
+.finals{
+  padding: 30px;
+  height:150px;
+  width:700px;
+  opacity: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  background-color:rgb(255, 217, 0);
+  transition: 3s;
+  position: relative;
+  animation-name: finals;
+  transition: 4s;
+ margin-left: 400px;
+ border-radius: 30px;
+ border-style:dotted;
+ animation-fill-mode: forwards;
+  }
